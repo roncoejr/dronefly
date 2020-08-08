@@ -1,0 +1,121 @@
+<html>
+<head><title>Drone Control Form</title>
+<script language="javascript" src="./script/js/controller_post.js">
+</script>
+</head>
+<body>
+<p><h1>Drone Control Pad</h1></p>
+	<form action="" method="POST">
+		<table>
+			<th>
+				<td>
+				</td>
+				<td>
+				</td>
+				<td>
+				</td>
+			</th>
+			<tr>
+				<td>
+				</td>
+				<td>
+					<input type="button" id="fn_command" name="fn_command" value="SDK MODE" onclick="postDriver('action=command&droneId=192.168.10.1')">
+				</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+				<td>
+					<input type="button" id="fn_forward" name="fn_forward" value="FORWARD" onclick="postDriver('action=forward&droneId=192.168.10.1&value=180')">
+				</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+				<td>
+				</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" id="fn_left" name="fn_left" value="LEFT" onclick="postDriver('action=left&droneId=192.168.10.1&value=35')"></td><td></td><td><input type="button" id="fn_right" name="fn_right" value="RIGHT" onclick="postDriver('action=right&droneId=192.168.10.1&value=35')">
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+				<td>
+				</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+				<td>
+					<input type="button" id="fn_backward" name="fn_backward" value="BACKWARD" onclick="postDriver('action=back&droneId=192.168.10.1&value=180')">
+				</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+				<td>
+				</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+				<td>
+				</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" id="fn_90left" name="fn_90left" value="90 LEFT" onclick="postDriver('action=ccw&droneId=192.168.10.1&value=90')">
+				</td>
+				<td>
+				</td>
+				<td>
+					<input type="button" id="fn_90right" name="fn_90right" value="90 RIGHT" onclick="postDriver('action=cw&droneId=192.168.10.1&value=90')">
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+				<td>
+				</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+				<td>
+				</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" id="fn_takeoff" name="fn_takeoff" value="TAKE OFF" onclick="postDriver('action=takeoff&droneId=192.168.10.1')">
+				</td>
+				<td>
+				</td>
+				<td>
+					<input type="button" id="fn_land" name="fn_land" value="LAND" onclick="postDriver('action=land&droneId=192.168.10.1')">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
